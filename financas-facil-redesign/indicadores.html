@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Finanças Fácil: notícias de economia e mercado financeiro." />
+    <title>Indicadores | Finanças Fácil</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Ajuste incorporado específico desta página: alinhar cartões Bootstrap novos ao raio/borda já usados no restante do site, sem alterar nenhum componente existente */
+      .media-card,
+      #conversor .card {
+        border-radius: 5px;
+        border-color: #e5e7ea;
+      }
+      .indicadores-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 4px;
+        font-size: 13px;
+      }
+      .indicadores-table th,
+      .indicadores-table td {
+        padding: 10px 12px;
+        text-align: left;
+      }
+      .indicadores-table thead th {
+        background: #f5f7f9;
+        color: #50565e;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+      }
+      .indicadores-table tbody tr {
+        border-bottom: 1px solid #e5e7ea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topline">
+      <div class="wrap topline-inner">
+        <span>QUARTA-FEIRA, 18 DE NOVEMBRO DE 2026</span><span>Informação para entender o mercado</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="wrap header-main">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">F</span
+          ><span>FINANÇAS<span class="brand-light">FÁCIL</span><small>NOTÍCIAS & MERCADOS</small></span></a
+        >
+        <form class="search" onsubmit="return searchSite(event);">
+          <input id="searchInput" placeholder="Buscar notícias, ativos e assuntos" /><button>⌕</button>
+        </form>
+        <a class="header-cta" href="indicadores.html">Painel do mercado ↗</a>
+      </div>
+      <nav class="nav">
+        <div class="wrap nav-inner">
+          <a class="nav-link" href="index.html">Início</a><a class="nav-link" href="ultimas.html">Últimas Notícias</a
+          ><a class="nav-link" href="mercados.html">Mercados</a><a class="nav-link" href="economia.html">Economia</a
+          ><a class="nav-link" href="empresas.html">Empresas</a
+          ><a class="nav-link" href="investimentos.html">Onde Investir</a
+          ><a class="nav-link" href="cripto.html">Cripto</a
+          ><a class="nav-link active" href="indicadores.html">Indicadores</a
+          ><a
+            class="nav-link text-decoration-none"
+            href="https://www.b3.com.br/pt_br/market-data-e-indices/"
+            target="_blank"
+            rel="noopener"
+            >B3 (site oficial) ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="ticker">
+      <div class="wrap ticker-inner">
+        <b>MERCADO</b><span>IBOVESPA <strong>167.537,95</strong> <i class="down">−1,34%</i></span
+        ><span>DÓLAR <strong>R$ 5,868</strong> <i class="up">+1,48%</i></span
+        ><span>BRENT <strong>US$ 91,95</strong> <i class="down">−1,27%</i></span
+        ><small>Fechamento de 18/11/2026 · dados históricos</small><b>MERCADO</b
+        ><span>IBOVESPA <strong>167.537,95</strong> <i class="ticker-copy down">−1,34%</i></span
+        ><span>DÓLAR <strong>R$ 5,868</strong> <i class="ticker-copy up">+1,48%</i></span
+        ><span>BRENT <strong>US$ 91,95</strong> <i class="ticker-copy down">−1,27%</i></span
+        ><small>Fechamento de 18/11/2026 · dados históricos</small>
+      </div>
+    </div>
+    <main class="wrap main">
+      <section class="page-intro">
+        <div class="eyebrow">PAINEL DO MERCADO</div>
+        <h1>Indicadores</h1>
+        <p>Fechamento de quarta-feira, 18 de novembro de 2026.</p>
+      </section>
+      <div class="indicator-grid">
+        <article>
+          <small>IBOVESPA</small><strong>167.537,95</strong><em class="negative">−1,34%</em>
+          <p>Índice encerrou abaixo dos 168 mil pontos.</p>
+        </article>
+        <article>
+          <small>DÓLAR COMERCIAL</small><strong>R$ 5,868</strong><em class="positive">+1,48%</em>
+          <p>Quinta alta consecutiva, segundo a Agência Brasil.</p>
+        </article>
+        <article>
+          <small>PETRÓLEO BRENT</small><strong>US$ 91,95</strong><em class="negative">−1,27%</em>
+          <p>Referência internacional do petróleo.</p>
+        </article>
+      </div>
+      <div class="info-panel">
+        <h2>O que influenciou o pregão?</h2>
+        <p>
+          O noticiário destacou as incertezas em torno do ajuste fiscal brasileiro, a valorização do dólar no mercado
+          internacional e as expectativas sobre os juros dos Estados Unidos.
+        </p>
+        <a
+          href="https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-587-com-expectativa-sobre-votacao-de-ajuste-fiscal"
+          target="_blank"
+          >Consultar reportagem da Agência Brasil →</a
+        >
+      </div>
+      <section class="content-section" id="historico">
+        <div class="section-head">
+          <h2>Histórico da semana</h2>
+          <span>DADOS HISTÓRICOS</span>
+        </div>
+        <table class="table table-sm table-striped indicadores-table">
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Ibovespa (pts)</th>
+              <th scope="col">Dólar (R$)</th>
+              <th scope="col">Brent (US$)</th>
+              <th scope="col">Variação Ibovespa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12/11/2026</td>
+              <td>170.820,30</td>
+              <td>5,744</td>
+              <td>93,40</td>
+              <td class="positive">+0,61%</td>
+            </tr>
+            <tr>
+              <td>13/11/2026</td>
+              <td>170.102,40</td>
+              <td>5,782</td>
+              <td>93,10</td>
+              <td class="negative">−0,42%</td>
+            </tr>
+            <tr>
+              <td>14/11/2026</td>
+              <td>169.845,10</td>
+              <td>5,801</td>
+              <td>92,70</td>
+              <td class="negative">−0,15%</td>
+            </tr>
+            <tr>
+              <td>17/11/2026</td>
+              <td>169.845,10</td>
+              <td>5,785</td>
+              <td>93,15</td>
+              <td class="positive">+0,00%</td>
+            </tr>
+            <tr>
+              <td>18/11/2026</td>
+              <td>167.537,95</td>
+              <td>5,868</td>
+              <td>91,95</td>
+              <td class="negative">−1,34%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source-note">
+          Série histórica fictícia, com finalidade acadêmica, baseada no fechamento informado de 18/11/2026.
+        </p>
+      </section>
+      <section class="content-section" id="midia">
+        <div class="section-head">
+          <h2>Resumo em vídeo e áudio</h2>
+          <span>CONTEÚDO ORIGINAL</span>
+        </div>
+        <div class="card media-card">
+          <div class="card-body">
+            <p>Resumo visual do fechamento do mercado:</p>
+            <video controls width="100%" poster="img/mercados-destaque.jpg">
+              <source src="video/resumo-mercado-video.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <p class="mt-3">Narração em áudio do mesmo resumo:</p>
+            <audio controls style="width: 100%">
+              <source src="audio/resumo-mercado.mp3" type="audio/mpeg" />
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p class="source-note mt-2">Vídeo e áudio autorais, gerados para este projeto acadêmico.</p>
+          </div>
+        </div>
+      </section>
+      <section class="content-section" id="conversor">
+        <div class="section-head">
+          <h2>Conversor rápido R$ → US$</h2>
+          <span>FERRAMENTA</span>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <label for="valorReais">Valor em reais</label
+            ><input type="number" id="valorReais" class="form-control" min="0" step="0.01" placeholder="Ex: 100" />
+            <p id="resultadoConversao" class="mt-3">
+              Informe um valor em reais para converter em dólares, pela cotação de fechamento (R$ 5,868).
+            </p>
+            <ul id="listaMultiplos" class="mt-2"></ul>
+          </div>
+        </div>
+      </section>
+      <p class="disclaimer">Dados históricos com fonte identificada. Não há integração com cotações em tempo real.</p>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div>
+          <b class="foot-brand">FINANÇAS<span>FÁCIL</span></b>
+          <p>Informação clara para acompanhar economia, investimentos e mercados.</p>
+        </div>
+        <div>
+          <b>Explore</b><a href="ultimas.html">Últimas notícias</a><a href="mercados.html">Mercados</a
+          ><a href="economia.html">Economia</a>
+        </div>
+        <div>
+          <b>Aprenda</b><a href="glossario.html">Glossário</a><a href="indicadores.html">Indicadores</a
+          ><a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div class="wrap copyright">
+        © 2026 Finanças Fácil. Projeto acadêmico independente, sem afiliação ao InfoMoney.
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
